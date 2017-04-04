@@ -1,0 +1,63 @@
+{"heroes": [
+    {
+        "name": "Yoda",
+        "specialty": "wisdom",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Mace Windu",
+        "specialty": "discernment",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Qui-Gon Jin",
+        "specialty": "leadership",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "specialty": "patience",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Anakin Skywalker",
+        "specialty": "force awareness",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Luke Skywalker",
+        "specialty": "honor",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Leia Organa",
+        "specialty": "courage",
+        "roles": ["Princess","General"]
+    },
+    {
+        "name": "Han Solo",
+        "specialty": "bravado",
+        "roles": ["Pilot","Smuggler"]
+    },
+    {
+        "name": "Chewbacca",
+        "specialty": "loyalty",
+        "roles": ["Pilot","Smuggler"]
+    },
+    {
+        "name": "Finn",
+        "specialty": "righteousness",
+        "roles": ["Soldier"]
+    },
+    {
+        "name": "Rey",
+        "specialty": "independence",
+        "roles": ["Jedi"]
+    },
+    {
+        "name": "Peo Dameron",
+        "specialty": "bravado",
+        "roles": ["Pilot"]
+    }
+]
+}

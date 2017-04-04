@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let hero of heroes; let i = index;" (click)="selectHero(hero)">{{hero.name}}</li>
+</ul>
+
+<span>{{selectedHero | json}}</span>
