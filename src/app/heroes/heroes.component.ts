@@ -9,8 +9,8 @@ import { Hero } from './hero';
     styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-    private heroes: Array<Hero>;
-    private selectedHero: string;
+    public heroes: Array<Hero>;
+    public selectedHero: string;
 
     constructor(
         private heroesService : HeroesService
