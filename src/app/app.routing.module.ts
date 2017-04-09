@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroComponent } from './heroes/hero/hero.component';
 import { VillainsComponent } from './villains/villains.component';
 
 export const appRoutes: Routes = [
@@ -19,4 +20,4 @@ export class AppRouteModule {
     }
  }
 
-export const routedComponents = [HeroesComponent, VillainsComponent];
+export const routedComponents = [HeroesComponent, HeroComponent, VillainsComponent];

@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import 'rxjs/add/operator/map';
+
 import { AppComponent } from './app.component';
 import { AppRouteModule, routedComponents } from './app.routing.module';
 import { HeroesService } from './heroes/heroes.service';
+
 
 @NgModule({
   declarations: [

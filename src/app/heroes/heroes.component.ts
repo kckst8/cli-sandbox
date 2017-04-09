@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Observable } from 'rxjs/Observable';
 import { HeroesService } from './heroes.service';
-import { Hero } from './hero';
+import { Hero } from './hero/hero';
 
 @Component({
     selector: 'heroes',
@@ -9,7 +9,7 @@ import { Hero } from './hero';
     styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-    public heroes: Array<Hero>;
+    public heroes: Observable<Array<Hero>>;
     public selectedHero: string;
 
     constructor(
@@ -18,7 +18,12 @@ export class HeroesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.heroesService.getHeroes().then(heroes => this.heroes = heroes);
+       // this.heroes = [];
+        this.heroes = this.heroesService.getHeroes();
+        // change heroes to just arrary and remove async pipe if using this      
+        // this.heroesService.getHeroes().subscribe(heroes => {
+        //     this.heroes = heroes;
+        // });
     }
 
     public selectHero(hero) {
