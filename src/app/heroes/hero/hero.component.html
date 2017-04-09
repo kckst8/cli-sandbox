@@ -1,3 +1,6 @@
-<div>
-  
+<div *ngIf="hero">
+  <div>
+    <label>Name</label>
+    <input [(ngModel)]="hero.name" type="text" />
+  </div>
 </div>

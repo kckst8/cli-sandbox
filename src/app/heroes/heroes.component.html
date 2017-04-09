@@ -2,4 +2,4 @@
     <li *ngFor="let hero of heroes | async; let i = index;" (click)="selectHero(hero)">{{hero.name}}</li>
 </ul>
 
-<span>{{selectedHero | json}}</span>
+<hero-detail [hero]="selectedHero"></hero-detail>

@@ -28,5 +28,6 @@ export class HeroesComponent implements OnInit {
 
     public selectHero(hero) {
         this.selectedHero = hero;
+        console.log(this.selectedHero);
     }
 }

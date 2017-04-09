@@ -31,15 +31,4 @@ export class HeroesService {
         .get('src/app/heroes/heroes.json')
         .map(response => response.json().heroes as Hero[]);
     }
-
-    // getHeroes(): Observable<Response> {
-    //     return this.http
-    //     .get('src/app/heroes/heroes.json');
-    // }
-
-    // getHero(id: number): Observable<Hero> {
-    //     return this.http
-    //     .get('src/app/heroes/heroes.json')
-    //     .map( response => response.json())
-    // }
 }
