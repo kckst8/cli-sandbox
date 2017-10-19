@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Hero } from './hero';
 
 @Component({
@@ -8,6 +9,7 @@ import { Hero } from './hero';
 })
 export class HeroComponent implements OnInit {
   @Input() hero: Hero;
+
   constructor() { 
     console.log(this.hero);
   }

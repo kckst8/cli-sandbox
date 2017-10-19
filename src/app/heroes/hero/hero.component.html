@@ -1,6 +1,10 @@
 <div *ngIf="hero">
   <div>
     <label>Name</label>
-    <input [(ngModel)]="hero.name" type="text" />
+    <input class="form-control" [(ngModel)]="hero.name"/>
+  </div>
+  <div>
+    <label>Specialty</label>
+    <input [(ngModel)]="hero.specialty" type="text" />
   </div>
 </div>

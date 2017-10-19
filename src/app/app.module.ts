@@ -1,14 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import 'rxjs/add/operator/map';
 
 import { AppComponent } from './app.component';
 import { AppRouteModule, routedComponents } from './app.routing.module';
-import { HeroesService } from './heroes/heroes.service';
 
+import {HeroesModule} from './heroes/heroes.module'
 
 @NgModule({
   declarations: [
@@ -17,11 +15,10 @@ import { HeroesService } from './heroes/heroes.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    AppRouteModule
+    AppRouteModule,
+    HeroesModule
   ],
-  providers: [HeroesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

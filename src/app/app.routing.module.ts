@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroComponent } from './heroes/hero/hero.component';
+import { HeroesRouteModule} from './heroes/heroes.routing.module'
 import { VillainsComponent } from './villains/villains.component';
 
 export const appRoutes: Routes = [
-    { path: 'heroes', component: HeroesComponent},
     { path: 'villains', component: VillainsComponent}
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [RouterModule.forRoot(appRoutes), HeroesRouteModule],
     exports: [RouterModule]
 })
 export class AppRouteModule {
@@ -20,4 +18,4 @@ export class AppRouteModule {
     }
  }
 
-export const routedComponents = [HeroesComponent, HeroComponent, VillainsComponent];
+export const routedComponents = [VillainsComponent];
