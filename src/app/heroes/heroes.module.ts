@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { HeroesComponent } from './heroes.component';
 import { HeroComponent } from './hero/hero.component';
 import { AddHeroComponent } from './hero/add-hero/add-hero.component';
+import { HeroesRouteModule } from './heroes.routing.module';
 
 import { HeroesService} from './heroes.service';
 
@@ -20,7 +21,8 @@ import { HeroesService} from './heroes.service';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    CommonModule
+    CommonModule,
+    HeroesRouteModule
   ],
   providers: [
     HeroesService

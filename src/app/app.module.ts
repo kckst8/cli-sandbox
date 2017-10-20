@@ -4,19 +4,22 @@ import { NgModule } from '@angular/core';
 import 'rxjs/add/operator/map';
 
 import { AppComponent } from './app.component';
-import { AppRouteModule, routedComponents } from './app.routing.module';
+import { AppRouteModule } from './app.routing.module';
 
-import {HeroesModule} from './heroes/heroes.module'
+import { HeroesModule } from './heroes/heroes.module';
+import { VillainsModule } from './villains/villains.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routedComponents
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRouteModule,
-    HeroesModule
+    HeroesModule,
+    VillainsModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
