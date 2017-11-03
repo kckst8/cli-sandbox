@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 import { HeroesComponent } from './heroes.component';
@@ -20,7 +20,7 @@ import { HeroesService} from './heroes.service';
   imports: [
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
     CommonModule,
     HeroesRouteModule
   ],

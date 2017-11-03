@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/toPromise'; //If using toPromise
+//import 'rxjs/add/operator/toPromise'; //If using toPromise
 
-import { Hero } from './hero/hero';
+import { HeroesResponse } from './hero/hero';
 
 @Injectable ()
 export class HeroesService {
-    public heroes: Array<string>;
+ //   public heroes: Array<string>;
 
     constructor(
-        private http:  Http
+        private http:  HttpClient 
     ) {
 
     }
@@ -26,9 +26,8 @@ export class HeroesService {
     //     });
     // }
     
-     getHeroes(): Observable<Array<Hero>> {
+     getHeroes(): Observable<HeroesResponse> {
         return this.http
-        .get('src/app/heroes/heroes.json')
-        .map(response => response.json().heroes as Hero[]);
+        .get<HeroesResponse>('assets/heroes.json');
     }
 }

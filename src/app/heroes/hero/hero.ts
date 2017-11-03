@@ -4,3 +4,7 @@ export class Hero {
     specialty: string;
     roles: Array<string>;
 }
+
+export class HeroesResponse {
+    heroes: Hero[];
+}

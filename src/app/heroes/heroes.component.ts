@@ -9,7 +9,7 @@ import { Hero } from './hero/hero';
     styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-    public heroes: Observable<Array<Hero>>;
+    public heroes: Array<Hero>;
     public selectedHero: string;
 
     constructor(
@@ -19,11 +19,9 @@ export class HeroesComponent implements OnInit {
 
     ngOnInit() {
        // this.heroes = [];
-        this.heroes = this.heroesService.getHeroes();
-        // change heroes to just arrary and remove async pipe if using this      
-        // this.heroesService.getHeroes().subscribe(heroes => {
-        //     this.heroes = heroes;
-        // });
+        this.heroesService.getHeroes().subscribe(data => {
+            this.heroes = data.heroes;
+        });
     }
 
     public selectHero(hero) {
