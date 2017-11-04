@@ -1,3 +1,8 @@
-<p>
-  add-hero works!
-</p>
+<div id="wrapper" style="display: none">
+  <div class="modal-overlay"></div>
+  <div class="modal" style="padding: 20px;">
+    <hero-detail [hero]="hero"></hero-detail>
+    <button>Add</button>
+    <button (click)="close()">Cancel</button>
+  </div>
+</div>
